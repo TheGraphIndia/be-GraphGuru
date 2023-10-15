@@ -1,4 +1,4 @@
-# Navigating Web3 - The Graph India
+# Become GraphGuru
 
 This repo is your starting point to work on The Graph during Workshop.
 
@@ -15,13 +15,13 @@ Deploy a simple smart contract on the Polygon Mumbai testnet and deploy a subgra
 
 ### BUIDLing!!!
 
-- Open [Remix IDE](https://remix.ethereum.org/). Create a Solidity file `NavigatingWeb3.sol` and paste the following code.
+- Open [Remix IDE](https://remix.ethereum.org/). Create a Solidity file `GraphGuru.sol` and paste the following code.
 
     ```solidity
     //SPDX-License-Identifier: MIT
     pragma solidity ^0.8.7;
 
-    contract NavigatingWeb3 {
+    contract GraphGuru {
 
     event ChangeNameEvent (string name);
     event ChangeTwitterNameEvent (string name);
@@ -68,7 +68,7 @@ Deploy a simple smart contract on the Polygon Mumbai testnet and deploy a subgra
 - Select `mumbai` as our network.
 - Enter the contract address of your deployed contract from above. It will automatically fetch the ABI as we have verified our contract.
 - Enter the block number in which the contract is created.
-- Enter `NavigatingWeb3` as the contract name.
+- Enter `GraphGuru` as the contract name.
 - Press Enter for `Index contract events as entities`.
 - You have successfully created your first Subgraph. (YOU ARE AWESOMEEE! 🙇🏻‍♂️)
 -------
@@ -79,7 +79,7 @@ Deploy a simple smart contract on the Polygon Mumbai testnet and deploy a subgra
     ```
 - Change the directory to your deployed subgraph folder
     ```
-    cd NavigatingWeb3
+    cd GraphGuru
     ```
 - Now we build our subgraph using the following command
   ```
@@ -87,7 +87,7 @@ Deploy a simple smart contract on the Polygon Mumbai testnet and deploy a subgra
   ```
 - Final Step - Deploy your subgraph. 🥳🥳🥳
   ```
-  graph deploy --studio NavigatingWeb3
+  graph deploy --studio GraphGuru
   ```
 - You can give the version as `v0.1`
 
@@ -156,7 +156,7 @@ To start using follow these steps:
 
 - Go back to our `App.jsx` and store the URL in a variable inside the App function.
     ```javascript
-    const QueryURL = "https://api.studio.thegraph.com/query/39471/NavigatingWeb3/version/latest"
+    const QueryURL = "https://api.studio.thegraph.com/query/39471/GraphGuru/version/latest"
     ```
 - You need an API Key to query the data. Under the Query URL you can see the option to `Manage API Keys`. Click on that and it will take you to create it. You can also create it using [this](https://thegraph.com/studio/apikeys/) link.
 ![Screenshot](https://github.com/TheGraphIndia/Graph-A-Thon/raw/main/assets/47234407/81f2507f-c1fe-4eaa-a1c4-44386746502e.png)
@@ -233,7 +233,7 @@ To start using follow these steps:
     function App() {
     const [names, setNames] = useState([]);
 
-    const QueryURL = "https://api.studio.thegraph.com/query/39471/NavigatingWeb3/version/latest";
+    const QueryURL = "https://api.studio.thegraph.com/query/39471/GraphGuru/version/latest";
 
     const client = createClient({
     url: QueryURL
