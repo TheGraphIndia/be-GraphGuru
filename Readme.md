@@ -252,7 +252,7 @@ To start using follow these steps:
       const getNames = async () => {
         const { data } = await client.query(query).toPromise();
         console.log(data);
-        setNames(data.names);
+        setNames(data.changeNameEvents);
       }
       getNames();
     }, [])
